@@ -1,17 +1,10 @@
-// App.tsx (main component)
+import ChromeTabStack from './chrome-tab-stack'
 
-import React, { useState } from 'react';
-
-const App: React.FC = () => {
-  const [count, setCount] = useState(0);
-
+export default function Page() {
   return (
-    <div className="App">
-    <h1>Hello, Vite + React + TypeScript!</h1>
-    <p>Count: {count}</p>
-    <button onClick={() => setCount(count + 1)}>Increment</button>
+    <div className="container mx-auto py-8">
+    <h1 className="text-2xl font-bold mb-4">Favorites</h1>
+    <ChromeTabStack />
     </div>
-  );
-};
-
-export default App;
+  )
+}
